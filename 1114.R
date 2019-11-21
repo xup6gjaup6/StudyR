@@ -15,10 +15,16 @@ sort(age,decreasing=T)
 
 #2. 建立 5 位同隊 NBA 球星的得分資料向量。
 #a. 到美國 NBA 或運動網站查詢自己喜歡的球隊以及球星,為他們的 10 場比賽建立 5 場進球的向量。以及罰球的向量。
-#b. 假設上一題的 5 位球星,每場比賽會進一顆 3 分球(如果該場次未進球,則此                             為 0),請計算此 5 位球星的總得分以及平均得分。
+#b. 假設上一題的 5 位球星,每場比賽會進一顆 3 分球(如果該場次未進球,則此為 0),請計算此 5 位球星的總得分以及平均得分。
 #c. 請計算該隊 5 人的進球數和得分總數。
 #d. 請列出每場比賽得分最多的球員。
-names.P1
+
+NBA.playr=c("JAMES HARDEN","STEPHEN CURRY","LEBRON JAMES","KAWHI LEONARD","GIANNIS ANTETOKOUNMPO")
+NBA.baskts=c(6,8,9,10,12)
+NBA.free.throw=c(5,3,8,2,6)
+NBA.score=NBA.baskts*3+NBA.free.throw
+which.max(NBA.score)
+
 
 #3. 參考實例 ch4_84,列出當月有 31 天的月份。
 month.data = c(31,28,31,30,31,30,31,31,30,31,30,31)
