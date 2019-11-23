@@ -13,6 +13,7 @@ sort(NAME,decreasing=T)
 sort(age,decreasing=F)
 sort(age,decreasing=T)
 
+
 #2. 建立 5 位同隊 NBA 球星的得分資料向量。
 #a. 到美國 NBA 或運動網站查詢自己喜歡的球隊以及球星,為他們的 10 場比賽建立 5 場進球的向量。以及罰球的向量。
 NBA.player=c("JAMES HARDEN","STEPHEN CURRY","LEBRON JAMES","KAWHI LEONARD","GIANNIS ANTETOKOUNMPO")
@@ -89,3 +90,4 @@ length(islands)
 x=1:length(islands)
 islands[x%%2==1]
 islands[x%%2==0]
+
