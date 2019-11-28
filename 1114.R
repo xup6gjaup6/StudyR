@@ -76,10 +76,14 @@ month.data
 names(month.data[month.data==31])
 
 #4. 使用系統內建數據集 islands,列出排序第 30 和 35 名的島名稱和面積。
-islands
-newislands=sort(islands,decreasing=T)
-newislands
-islands[c(30,35)]
+a=islands
+b=sort(a)
+b[30]
+b[35]
+c=sort(islands,decreasing=T)
+c[30]
+c[35]
+
 #5. 使用系統內建數據集 islands,列出前 15 大和最後 15 大的島名稱和面積。
 small15.islands=tail(sort(islands,decreasing=TRUE),15)
 small15.islands
